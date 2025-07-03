@@ -1,0 +1,131 @@
+
+
+#fancybox-buttons ul {
+	background: rgb(5,5,5);
+	background: rgba(5,5,5,0.8);
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#fancybox-buttons a.btnNext,
+#fancybox-buttons a.btnToggle,
+#fancybox-buttons a.btnClose {
+	
+}
+
+#fancybox-thumbs ul li {
+	opacity: 0.3;
+	transition: opacity .2s;
+}
+
+#fancybox-thumbs ul li a {
+	border: 0;
+}
+
+#fancybox-thumbs ul li.active {
+	border-color: transparent;
+	opacity: 1;
+}
+
+.fancybox-close, 
+.fancybox-prev span, 
+.fancybox-next span {
+	background: none;
+}
+
+.fancybox-next,
+.fancybox-prev {
+	display: block;
+	opacity: 0;
+	transition: opacity .2s;
+}
+
+/* Note: Using "right" or "margin-right" directly causes mousewheel feature stops working somehow */
+.fancybox-next {
+	right: -85px;
+}
+
+.fancybox-prev {
+	left: -85px;
+}
+
+.fancybox-next:hover,
+.fancybox-prev:hover {
+	opacity: 1;
+}
+
+.fancybox-nav span {
+	height: auto;
+	width: auto;
+}
+
+.fancybox-next span {
+	right: 0;
+}
+
+.fancybox-prev span {
+	left: 0;
+}
+
+.fancybox-next span::after,
+.fancybox-prev span::after {
+	font-family: 'Ionicons';
+	font-size: 40px;
+}
+
+.fancybox-next span::after {
+	content: '\f3d6';
+}
+
+.fancybox-prev span::after {
+	content: '\f3d5';
+}
+
+
+#fancybox-buttons a {
+	background: none;
+	color: #fff;
+	font-size: 18px;
+	text-indent: 0;
+	text-align: center;
+}
+
+#fancybox-buttons a {
+	transition: opacity .2s;
+}
+
+#fancybox-buttons a::after {
+	display: inline-block;
+	font-family: 'Ionicons';
+	margin-left: 0;
+	margin-top: 1px;
+}
+
+#fancybox-buttons a.btnClose::after {
+	content: '\f2d7';
+	margin-left: 4px;
+	margin-top: 1px;
+}
+
+#fancybox-buttons a.btnToggle::after {
+	content: '\f386';
+}
+
+#fancybox-buttons a.btnNext::after {
+	content: '\f125';
+	font-size: 13px;
+}
+
+#fancybox-buttons a.btnPrev::after {
+	content: '\f124';
+	font-size: 13px;
+}
+
+#fancybox-buttons a.btnPlay::after {
+	content: '\f488';
+}
+
+#fancybox-buttons a.btnPlayOn::after {
+	content: '\f478';
+}
