@@ -190,7 +190,6 @@ textarea {
 	font-size: 100%;
 	margin: 0;
 	vertical-align: baseline;
-	*vertical-align: middle;
 }
 
 .no-margin {
@@ -1297,8 +1296,8 @@ transition: all .3s cubic-bezier(.25,1,.35,1) 0s;
 }
 
 .slider-text{
-	width: 80%;
-	font-size: 16px;
+	width: 100%;
+	font-size: 50px;
 	text-align: center;
 	margin: 0 auto;
 }
